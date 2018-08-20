@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>移动页面demo</title>
+	<title>移动页面.....demo</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=0">
 	<style>
 		*{margin: 0;padding:0;}
 		ul,li{list-style: none;}
@@ -44,19 +45,15 @@
 		}
 		/* 默认手机显示 */
 		.nav2{display: none}
-		@media(min-width: 451px){
+		@media only screen and  (min-width: 451px){
 			button{display: none;}
 			.nav,.nav.active{display: none;}
-			/* .nav2{display: flex;background: red;justify-content:space-between;} */
 			header{display: flex;align-items:center;}
 			header .nav2{display: flex;}
 			header .nav2>li{
 				margin:0 10px;
 			}
-			
 		}
-	
-
 
 	</style>
 </head>
